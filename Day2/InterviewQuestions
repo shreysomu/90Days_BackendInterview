@@ -1,0 +1,57 @@
+🔹 Why array size is fixed?
+Because memory is allocated at compile time (or creation time) as a continuous block.
+Resizing requires:
+Creating new array
+Copying elements
+That’s why size is fixed.
+
+🔹 Difference Between Array and ArrayList?
+Array	                    ArrayList
+Fixed size	              Dynamic size
+Faster	                  Slightly slower
+Stores primitives       	Stores objects only
+No built-in methods	      Many utility methods
+ArrayList internally uses an array and resizes when needed.
+
+🔹 Time Complexity of Searching in Array?
+Linear Search → O(n)
+Binary Search (sorted) → O(log n)
+
+🔹 Can Array Store Objects?
+YES.
+Example:
+String[] names = {"Shrey", "Somu"};
+Student[] students = new Student[5];
+
+Arrays can store:
+Primitive types
+Object references
+
+🔹 What Happens if Index is Out of Range?
+Java throws:
+👉 ArrayIndexOutOfBoundsException
+Example:
+arr[10];
+
+🔹 Why Arrays Are Faster Than Collections?
+Because:
+No resizing
+No wrapper objects (for primitives)
+Direct memory access
+Less overhead
+
+Collections add abstraction + resizing + object boxing.
+
+✅ 5️⃣ THINKING QUESTION
+❓ Why Binary Search Cannot Work on Unsorted Array?
+Because binary search eliminates half of the array based on comparison.
+Example:
+Sorted:[2, 5, 8, 12, 20]
+If target < mid → go left.
+But in unsorted:[12, 2, 20, 5, 8] You cannot decide:
+Should I go left?
+Should I go right?
+Because order is not guaranteed.
+
+🎯 Interview One-Line Answer:
+Binary search depends on sorted order to eliminate half of the search space. Without order, we cannot safely discard half.
