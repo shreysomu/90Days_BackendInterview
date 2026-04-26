@@ -31,7 +31,7 @@
 6. Can we run Java without JDK?
 
 
-==========================================================================================
+================================================================================
 # ✅ DAY 2 — ARRAYS (ZERO → CONFIDENT)
 
 ⏱️ **Time:** 2–2.5 hours
@@ -82,5 +82,158 @@ Explain in your own words.
 Example:
 Input: [1, 2, 3, 4]
 Output: [2, 3, 4, 1]
+
+
+
+---
+
+===========================================================================
+# 🔒 DAY 3 — OOPS (CLASS, OBJECT, CONSTRUCTOR)
+
+⏱️ **Time:** ~2–2.5 hours
+🎯 **Outcome:** You can **design basic classes**, understand **objects**, and explain **constructors clearly in interviews**
+
+---
+
+## 1️⃣ CORE CONCEPT (45–60 mins)
+
+### 📌 Topics (ONLY THESE TODAY)
+
+* What is a **Class**
+* What is an **Object**
+* Fields (variables) vs Methods
+* **Constructor** (default + parameterized)
+* `this` keyword (basic use)
+
+---
+
+### 🎥 RESOURCE (STICK TO ONE)
+
+Use your locked source:
+
+---
+
+## 2️⃣ HANDS-ON CODING (MANDATORY) (60 mins)
+
+Create package:
+
+```java
+com.shrey.day3
+```
+
+---
+
+### 🔹 Program 1: Student Class
+
+```java
+class Student {
+    int id;
+    String name;
+
+    void display() {
+        System.out.println(id + " " + name);
+    }
+}
+```
+
+👉 In `main()`:
+
+* Create 2 objects
+* Assign values
+* Call `display()`
+
+---
+
+### 🔹 Program 2: Constructor Example
+
+```java
+class Employee {
+    int id;
+    String name;
+
+    Employee(int id, String name) {
+        this.id = id;
+        this.name = name;
+    }
+
+    void show() {
+        System.out.println(id + " " + name);
+    }
+}
+```
+
+👉 Create object using constructor
+
+---
+
+### 🔹 Program 3: Default vs Parameterized Constructor
+
+Try:
+
+* One class with no constructor
+* One with parameterized
+
+👉 Observe difference
+
+---
+
+## 3️⃣ MINI LOGIC TASK (20 mins)
+
+👉 Create a class `Calculator`
+
+Methods:
+
+* add()
+* subtract()
+* multiply()
+
+Call them using object.
+
+---
+
+## 4️⃣ INTERVIEW QUESTIONS (25 mins)
+
+Answer clearly:
+
+1. What is class and object?
+2. Difference between object and reference?
+3. What is constructor?
+4. Can constructor be private?
+5. What is `this` keyword?
+6. Can we have multiple constructors?
+7. What happens if we don’t define constructor?
+
+---
+
+## 5️⃣ THINK LIKE BACKEND DEV (IMPORTANT)
+
+👉 Why do we use classes in backend?
+
+Answer should include:
+
+* Data modeling
+* Real-world mapping (User, Order, Product)
+* Code reusability
+
+---
+
+## 🔒 DAY 3 RULES
+
+* ❌ No inheritance today
+* ❌ No abstraction
+* ✅ Only basics + clarity
+
+---
+
+## ✅ COMPLETION CHECK
+
+You should:
+
+* Understand object creation clearly
+* Know constructor role
+* Write class-based code without confusion
+
+
+
 
 
