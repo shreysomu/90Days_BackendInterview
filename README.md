@@ -234,6 +234,175 @@ You should:
 * Write class-based code without confusion
 
 
+==========================================================================
+
+---
+
+# 🔒 DAY 4 — INHERITANCE + POLYMORPHISM
+
+⏱️ **Time:** ~2–2.5 hours
+🎯 **Outcome:** You can **design relationships between classes** and explain **runtime vs compile-time behavior**
+
+---
+
+## 1️⃣ CORE CONCEPT (45–60 mins)
+
+### 📌 Topics (ONLY THESE)
+
+* What is **Inheritance**
+* Types (focus on **single inheritance**)
+* `extends` keyword
+* **Method Overriding**
+* **Polymorphism**
+
+  * Compile-time (overloading)
+  * Runtime (overriding)
+
+---
+
+### 🎥 RESOURCE (stick to one)
+
+---
+
+## 2️⃣ HANDS-ON CODING (MANDATORY) (60 mins)
+
+### 🔹 Program 1: Inheritance
+
+```java
+class Animal {
+    void sound() {
+        System.out.println("Animal makes sound");
+    }
+}
+
+class Dog extends Animal {
+    void bark() {
+        System.out.println("Dog barks");
+    }
+}
+```
+
+👉 In main:
+
+```java
+Dog d = new Dog();
+d.sound();
+d.bark();
+```
+
+---
+
+### 🔹 Program 2: Method Overriding (VERY IMPORTANT)
+
+```java
+class Animal {
+    void sound() {
+        System.out.println("Animal sound");
+    }
+}
+
+class Dog extends Animal {
+    @Override
+    void sound() {
+        System.out.println("Dog barks");
+    }
+}
+```
+
+👉 In main:
+
+```java
+Animal a = new Dog();
+a.sound();
+```
+
+---
+
+### 🧠 IMPORTANT (UNDERSTAND THIS LINE)
+
+```java
+Animal a = new Dog();
+```
+
+👉 This is **Runtime Polymorphism**
+
+---
+
+### 🔹 Program 3: Method Overloading
+
+```java
+class Calculator {
+    int add(int a, int b) {
+        return a + b;
+    }
+
+    int add(int a, int b, int c) {
+        return a + b + c;
+    }
+}
+```
+
+---
+
+## 3️⃣ INTERVIEW QUESTIONS (25 mins)
+
+Answer clearly:
+
+1. What is inheritance?
+2. Why use inheritance?
+3. What is method overriding?
+4. Difference between overloading vs overriding?
+5. What is runtime polymorphism?
+6. What is upcasting?
+7. Can we override static methods?
+8. What is `@Override` annotation?
+
+---
+
+## 4️⃣ THINK LIKE BACKEND DEV (IMPORTANT)
+
+👉 Real-world example:
+
+* `User → AdminUser`
+* `Payment → UPI / Card / NetBanking`
+
+👉 Inheritance helps:
+
+* Code reuse
+* Cleaner design
+
+---
+
+## 5️⃣ MINI CHALLENGE (OPTIONAL)
+
+Create:
+
+* `Vehicle` class
+* `Car` and `Bike` extending it
+* Override `start()` method
+
+---
+
+## 🔒 DAY 4 RULES
+
+* ❌ No abstraction yet
+* ❌ No interfaces yet
+* ✅ Focus on clarity
+
+---
+
+## ✅ COMPLETION CHECK
+
+You should:
+
+* Understand `extends`
+* Explain overriding vs overloading
+* Understand `Animal a = new Dog()`
+
+---
+
+
+
 
 
 
