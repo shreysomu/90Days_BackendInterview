@@ -31,7 +31,7 @@
 6. Can we run Java without JDK?
 
 
-================================================================================
+============================================================================
 # ✅ DAY 2 — ARRAYS (ZERO → CONFIDENT)
 
 ⏱️ **Time:** 2–2.5 hours
@@ -432,13 +432,6 @@ You should:
 ### 🎥 RESOURCE (stick to one)
 
 ## 2️⃣ HANDS-ON CODING (MANDATORY) (60 mins)
-
-Create package:
-
-```java
-com.shrey.day5
-```
-
 ---
 
 ## 🔹 Program 1: Abstract Class
@@ -551,14 +544,6 @@ Create:
 * Interface `Vehicle`
 * Classes `Car`, `Bike`
 * Method `start()`
-
----
-
-## 🔒 DAY 5 RULES
-
-* ❌ No Spring yet
-* ❌ No deep theory
-* ✅ Focus on clarity + coding
 
 ---
 
