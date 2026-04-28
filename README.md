@@ -400,9 +400,177 @@ You should:
 * Understand `Animal a = new Dog()`
 
 ---
+===========================================================================
 
+# 🔒 DAY 5 — ABSTRACTION + INTERFACES
 
+⏱️ **Time:** ~2–2.5 hours
+🎯 **Outcome:** You can clearly explain **abstraction vs interface** and use them in code (this is asked in almost every Java interview)
 
+---
+
+## 1️⃣ CORE CONCEPT (45–60 mins)
+
+### 📌 Topics (ONLY THESE TODAY)
+
+* What is **Abstraction**
+
+* Abstract class
+
+* Abstract method
+
+* Why abstraction is used
+
+* What is **Interface**
+
+* Interface vs Abstract class
+
+* Default & static methods (basic idea)
+
+---
+
+### 🎥 RESOURCE (stick to one)
+
+## 2️⃣ HANDS-ON CODING (MANDATORY) (60 mins)
+
+Create package:
+
+```java
+com.shrey.day5
+```
+
+---
+
+## 🔹 Program 1: Abstract Class
+
+```java
+abstract class Animal {
+    abstract void sound();
+
+    void sleep() {
+        System.out.println("Sleeping...");
+    }
+}
+
+class Dog extends Animal {
+    void sound() {
+        System.out.println("Dog barks");
+    }
+}
+```
+
+👉 In main:
+
+```java
+Animal a = new Dog();
+a.sound();
+a.sleep();
+```
+
+---
+
+## 🔹 Program 2: Interface
+
+```java
+interface Payment {
+    void pay();
+}
+
+class UPI implements Payment {
+    public void pay() {
+        System.out.println("Paid using UPI");
+    }
+}
+```
+
+👉 In main:
+
+```java
+Payment p = new UPI();
+p.pay();
+```
+
+---
+
+## 🔹 Program 3: Multiple Implementation (IMPORTANT)
+
+```java
+class Card implements Payment {
+    public void pay() {
+        System.out.println("Paid using Card");
+    }
+}
+```
+
+👉 Try switching objects:
+
+```java
+Payment p = new Card();
+p.pay();
+```
+
+👉 This is **real backend design thinking**
+
+---
+
+## 3️⃣ INTERVIEW QUESTIONS (30 mins)
+
+Answer clearly:
+
+1. What is abstraction?
+2. Difference between abstract class and interface?
+3. Can abstract class have constructor?
+4. Can interface have methods with body?
+5. Why multiple inheritance not allowed in class but allowed in interface?
+6. When to use abstract class vs interface?
+7. Can we create object of abstract class?
+
+---
+
+## 4️⃣ THINK LIKE BACKEND DEV (VERY IMPORTANT)
+
+👉 Real-world example:
+
+Payment system:
+
+* Interface → `Payment`
+* Implementations → `UPI`, `Card`, `NetBanking`
+
+👉 Why?
+
+* Loose coupling
+* Easy to extend
+* Clean architecture
+
+---
+
+## 5️⃣ MINI CHALLENGE (OPTIONAL)
+
+Create:
+
+* Interface `Vehicle`
+* Classes `Car`, `Bike`
+* Method `start()`
+
+---
+
+## 🔒 DAY 5 RULES
+
+* ❌ No Spring yet
+* ❌ No deep theory
+* ✅ Focus on clarity + coding
+
+---
+
+## ✅ COMPLETION CHECK
+
+You should:
+
+* Understand abstraction clearly
+* Know abstract vs interface difference
+* Be comfortable with interface-based design
+
+---
 
 
 
