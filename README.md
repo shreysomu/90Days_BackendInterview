@@ -556,6 +556,149 @@ You should:
 * Be comfortable with interface-based design
 
 ---
+==========================================================================
+
+# 🔒 DAY 6 — STRINGS (CORE + INTERVIEW LEVEL)
+
+⏱️ **Time:** ~2–2.5 hours
+🎯 **Outcome:** You understand **String behavior deeply** + solve basic string problems
+
+---
+
+## 1️⃣ CORE CONCEPT (45–60 mins)
+
+### 📌 Topics (VERY IMPORTANT)
+
+* What is `String` in Java
+* **Immutability**
+* String Constant Pool (basic idea)
+* `==` vs `.equals()`
+* `StringBuilder` vs `String`
+
+---
+
+### 🎥 RESOURCE (stick to one)
+
+Watch:
+
+* String basics
+* equals vs ==
+* StringBuilder basics
+
+---
+
+## 2️⃣ HANDS-ON CODING (MANDATORY) (45 mins)
+---
+
+## 🔹 Program 1: String Immutability
+
+```java
+String s = "Java";
+s.concat("Backend");
+System.out.println(s);
+```
+
+👉 Observe output
+👉 Understand WHY
+
+---
+
+## 🔹 Program 2: == vs equals()
+
+```java
+String a = "Hello";
+String b = "Hello";
+String c = new String("Hello");
+
+System.out.println(a == b);   // ?
+System.out.println(a == c);   // ?
+System.out.println(a.equals(c)); // ?
+```
+
+👉 Explain each line
+
+---
+
+## 🔹 Program 3: StringBuilder
+
+```java
+StringBuilder sb = new StringBuilder("Java");
+sb.append(" Backend");
+System.out.println(sb);
+```
+
+👉 Compare with String
+
+---
+
+## 3️⃣ DSA — STRING PROBLEMS (45–60 mins)
+
+### Solve in Java:
+
+### 🔹 Problem 1: Reverse a string
+
+```
+Input: "java"
+Output: "avaj"
+```
+
+---
+
+### 🔹 Problem 2: Check palindrome
+
+```
+Input: "madam"
+Output: true
+```
+
+---
+
+### 🔹 Problem 3: Count vowels
+
+```
+Input: "backend"
+Output: 3
+```
+
+---
+
+### 🔹 Problem 4: Remove spaces from string
+
+---
+
+## 4️⃣ INTERVIEW QUESTIONS (25 mins)
+
+Answer clearly:
+
+1. Why String is immutable?
+2. What is String Constant Pool?
+3. Difference between `==` and `.equals()`?
+4. String vs StringBuilder vs StringBuffer?
+5. Is String thread-safe?
+6. Why String is widely used in Java?
+
+---
+
+## 5️⃣ THINK LIKE BACKEND DEV
+
+👉 Why immutability matters:
+
+* Security (passwords, URLs)
+* Thread safety
+* Caching (SCP)
+---
+
+## ✅ COMPLETION CHECK
+
+You should:
+
+* Understand immutability
+* Know equals vs ==
+* Solve 3–4 string problems
+
+---
+
+
 
 
 
