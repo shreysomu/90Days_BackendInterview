@@ -698,6 +698,187 @@ You should:
 
 ---
 
+==========================================================================
+
+# 🔒 DAY 7 — COLLECTIONS (LIST, SET, MAP)
+
+⏱️ **Time:** ~2–2.5 hours
+🎯 **Outcome:** You can **choose the right data structure** and explain **why** (this is what interviewers care about)
+
+---
+
+## 1️⃣ CORE CONCEPT (60 mins)
+
+### 📌 Topics (VERY IMPORTANT)
+
+* What is **Collection Framework**
+* Difference:
+
+  * **List**
+  * **Set**
+  * **Map**
+* Classes:
+
+  * `ArrayList`
+  * `LinkedList`
+  * `HashSet`
+  * `HashMap`
+
+---
+
+### 🎥 RESOURCE (stick to one)
+
+
+Watch only:
+
+* Introduction
+* List, Set, Map basics
+
+❌ Skip deep internals for now
+
+---
+
+## 2️⃣ HANDS-ON CODING (MANDATORY) (60 mins)
+
+Create package:
+
+```java
+com.shrey.day7
+```
+
+---
+
+## 🔹 Program 1: ArrayList
+
+```java
+import java.util.*;
+
+ArrayList<Integer> list = new ArrayList<>();
+list.add(10);
+list.add(20);
+list.add(10);
+
+System.out.println(list);
+```
+
+👉 Understand:
+
+* Order maintained
+* Duplicates allowed
+
+---
+
+## 🔹 Program 2: HashSet
+
+```java
+HashSet<Integer> set = new HashSet<>();
+set.add(10);
+set.add(20);
+set.add(10);
+
+System.out.println(set);
+```
+
+👉 Understand:
+
+* No duplicates
+* Order not guaranteed
+
+---
+
+## 🔹 Program 3: HashMap
+
+```java
+HashMap<Integer, String> map = new HashMap<>();
+map.put(1, "Java");
+map.put(2, "Spring");
+map.put(1, "Backend");
+
+System.out.println(map);
+```
+
+👉 Understand:
+
+* Key-value pair
+* Duplicate key → value replaced
+
+---
+
+## 🔹 Program 4: Iterate Map
+
+```java
+for (Map.Entry<Integer, String> entry : map.entrySet()) {
+    System.out.println(entry.getKey() + " " + entry.getValue());
+}
+```
+
+---
+
+## 3️⃣ MINI PROBLEMS (IMPORTANT) (30–40 mins)
+
+### 🔹 Problem 1: Count frequency of elements
+
+```java
+Input: [1,1,2,3,2,1]
+Output: {1=3, 2=2, 3=1}
+```
+
+👉 Use HashMap
+
+---
+
+### 🔹 Problem 2: Remove duplicates from array
+
+👉 Use Set
+
+---
+
+## 4️⃣ INTERVIEW QUESTIONS (30 mins)
+
+Answer clearly:
+
+1. Difference between List, Set, Map?
+2. ArrayList vs LinkedList?
+3. Why HashSet doesn’t allow duplicates?
+4. How HashMap works (basic)?
+5. Why only one null key in HashMap?
+6. Difference between HashMap and Hashtable?
+7. When to use Set vs List?
+
+---
+
+## 5️⃣ THINK LIKE BACKEND DEV (CRITICAL)
+
+👉 Real-world usage:
+
+* `List` → ordered data (users list)
+* `Set` → unique items (IDs, tags)
+* `Map` → lookup (userId → User)
+
+👉 Interviewers LOVE this explanation
+
+---
+
+## 🔒 DAY 7 RULES
+
+* ❌ No internal hashing deep dive
+* ❌ No concurrency yet
+* ✅ Focus on usage + understanding
+
+---
+
+## ✅ COMPLETION CHECK
+
+You should:
+
+* Know when to use List / Set / Map
+* Write basic collection code
+* Solve frequency problem
+
+---
+
+
+
 
 
 
